@@ -1,0 +1,13 @@
+The size of the array once created is fixed we cant delete or add elements we can only assign vlaues to one of the ten elements in this array
+The toString method on this helper class prints out all the array elements comma delimited and contained in square brackets 
+String arrayElementsInAString = Arrays.toString(newArray);
+the static method binary search tree is on the array class :
+for binary search :
+	the array has to to be sorted first 
+	if there is any duplicate values there is no guarantee which one it'll match on 
+	elements must be comparable trying to compare instances of different types may lead to errors and invalid results 
+This method returns :
+	The position of a match if found 
+	It returns a -1 when no match was found 
+	its important to remeber that a positive number may not be the position of the first match 
+	If your array has a duplicate value and you need to find the first element other methods should be used 

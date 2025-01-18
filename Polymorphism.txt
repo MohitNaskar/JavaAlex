@@ -1,0 +1,74 @@
+ inheritance defines IS A relationship, inheritance is a way to reuse functionality and attributes 
+Composition defines HAS A relationship,String formatting is also known as String interpolation. It is the process of inserting a custom string or variable in predefined text
+Composition is a way to make the combination of classes act like a single coherent object.
+The reasons why compositions is preferred over inheritance
+	Composition is more flexible.You can add parts in,or remove them and these changes are less likely to have a downstream effect 
+	Composition provides functional reuse outside of the class heirarchy meaning classes can share attributes and behaviors by having similar components instead of inheriting 
+		functionality from a parent or base class.
+	Java's inheritance breaks encapsulation because subclasses may need direct access to a parent state or behavior.
+
+Polymorphism lets us write code to code to call a method but at runtine this methods behavior can be different for the different objects
+In the overriden methods from the base class in the inherited class the base method is printed then and then the overriden method in case of polymorphism
+
+FACTORY METHOD 
+The factor method involves extracting factors from an experiment and then utilising them in the analytical process of factor analysis
+
+POLYMORPHISM
+It's the ability to exeecute different behaviors for different types which are determined at the runtime
+polymorphism enables you to write generic code based on the bases or a parent class 
+
+what is VAR?
+var is a special contextual keyword in java that lets our code take advantage of local variable type inference;
+By using var as the type , java can figure out the compile-time type for us
+
+Local variable type inference[LVTI]
+	It cant be used in field declarations on a class 
+	It can't be used in a method signatures either as a parameter type or a return type
+	It cant be used without an assignment because the type can't be inferred in that case 
+	It cant be assined a null literal again becuase a type can't be inferred in that case
+
+instanceof Operator : The instanceof operator lets you test the type of an object or instance  
+	                The reference variable you are testting is the left operand
+			    The type youa re testing for, is the right operand 
+
+unknownObject instanceof Adventure 
+
+It's important to see that Adventure is not in quotes, meaning we're not testing the type name, but the actual type.
+The operator returns true, if unknownObject is an instance of adventure.							
+
+Encapsulation
+
+In java encapsulation mean hiding things by making them private or inaccessible.
+Why would we want to hide things in Java:
+	To make the interface simpler, we may want to hide unnecessary details.
+	To protect the intergrity of data on an object we may hide or restrict access to some th data and operations.
+	To decouple the published interface from the internals details of the class we may hide actual names and types of class members.
+
+Benifits of Encapsulation
+	  Staying in control: We protect the members of the class and osme methods from external access.This prevents calling code form bypassing the rules and constraints.
+
+Principles of Encapsulation
+	- create constructors for object initialization which enforces that only objects with valid data will get created.
+	- use the private access modifier for your fields.
+	- use setters and getters methods sparingly and only as needed.
+	- use access modifiers that aren't private, only for the methods that the calling code needs to use.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,84 @@
+  What is generics ? 
+Java supports generic types such as classes , records and interfaces
+example of a generic class 
+class YouTellMe<T> {
+	private T field;
+}
+The T in the angle breakets means it's the same type as the T, specified as the type of the field
+A few letters are reserved for the special use cases 
+The mostly commonly used type parameter identifier are 
+- E for the Element(Used extensively by the java collections framework)
+- K for the key(Used for mapped types)
+- N for numnbers 
+- T for types 
+- V for value
+- S,U,V etc for 2nd,3rd and 4th types
+
+
+Raw usage of generic class
+When you use generic classes either referencing them or instanciating them,its definately recommended that you include a type parameter 
+But we can still use them without specifying one,this is called the raw use of the refence type
+
+Generic allow the compiler to allow compile time type checking, when adding and processing elements in the list 
+Generics simplify code because we dont have to do our own type checking and casting as we would if the type of our elements was object 
+
+Generic classes can be bounded limiting the types that can use it
+The extends keyword in generic(blocks) doesnt have the same meaning as extends when it's used in a class declaration 
+This is saying the prameterized type t has to be the stretch of the interface or the subtype of it 
+In this case could have been either a class or an interface the syntax would be the same.
+This declaration established what is called an upperbound on the types that are allowed to be used with this class 
+public class team <T extends Player>{}
+
+
+***note any methods we add without a body is implicitly public and static on an interface 
+
+Why specify an upper bound?
+An upper bound permits access to the bounded types functionality .
+An upper bound limts the kind fo type parameters you can use when using a generic class the type used must be equal to or a subtype of the bounded type 
+
+INTERFACE USE FOR SORTING (COMPARABLE)
+For an array we can simply call Arrays.sort and pass it an array but as I have previously mentionedthe elements in the array need to implement Comparable 
+Types like string or pimitive wrapper classes like integer or character are sortable and this is because they do implement this interface
+Comparable Interface 
+
+public interface Comparable<T> {
+	int compareTo(T o);
+}
+
+This method takes one object as an argument shown on this slide as the letter o and compares it to the current instance shown as this
+
+THE COMPARATOR INTERFACE
+
+This is similar to the comparable interface;
+Syntax
+
+public interface Comparator<T>{
+	int campare(T o1,T o2);
+} 
+the comparator method takes two arguments meaning that it will compare the two arguments to one another and not one object to the intance self 
+
+For a method type parameter are placed after any modifiers and beofer the methods return type
+
+The type parameter can be referenced in method paramters or as the method return type or in the method
+
+A generic method can be used for static methods on a generic class becuase static methods can't use class type parameters 
+A generic method can be used on a non generic class to enforce type rules on a specific method
+A generic method type parameter is separate from ageneric class type parameter 
+
+"?" this syntax is called wildcard in the type argument,it is represented by a question mark. A wildcard means the type is unknown
+For this reason a wild card limits what you can do when you specify a type this way.A wild card can't be used in an instantiation of a generic class 
+
+<? extends> this is called upperbound
+<? super> this is lower bound 
+
+The compiler transforms a generic class into a typed class meaning the byte code or a class file contains no type parameters 
+Everywhere a type parameter is used in a class it gets replaced with either the type object,if no upper bound was specified or the upper bound type itself.
+This transformation is called type erasure because the T paramter(or S,U,V) is erased or replaced with true type  
+
+You can use multiple types to set a more restritive upper bound with the use of an ampersand between types.
+The conditions require a type argument ato implement all interfaces declared and to be a subtype of any class specified 
+You can extends only one class at most and zero to many interfaces 
+If you do extends a class as well as an interafce or two the class must be the first type listed
+
+A comparator interface is used to order the objects of user-defined classes. A comparator object is capable of comparing two objects of the same class. 
+Following function compare obj1 with obj2.

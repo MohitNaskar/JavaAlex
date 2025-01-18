@@ -1,0 +1,28 @@
+Static nested class
+Is a class enclosed in the structure of another class declared as static.This means the class if accessed externally requires the 
+outer lass name as part of the qualifying name.
+This class has the advantage of being able to access private attributes on the outer class
+The enclosing class can access any attributes on the static nested class also including private attributes 
+
+Inner classes
+Are non static classes declared on an enclosing class at the member level.
+Inner classes can have any of the four valid access modifier. An inner class has an access to instance members including private members
+of the enclosing class
+
+Creating an inner class
+EnclosingClass outerClass = new EnclosingClass();
+EnclosingClass.InnerClass innerClass = outerClass.new Innerclass();
+
+From the instance you call .new followed by the inner class name and the paraentheses taking any coonstructor argument
+Local classes are inner classes but declared directly in a code block usually a method body because of that they dont have access modifiers
+and are only accessable to that method body while executing,they can access local varibales adn methods arguments that are finals or effectively final
+
+Effective;y final : A local varibale or a method argument are effectively final if a value is assigned to them.
+
+Anonymous classes: A local class that doesn't have a name, an anonymous class is never created with a class declaration but its always instanciated 
+as a part of an expression.
+ 
+Ananonymous class us instanciated and assigned in a single statement. The new keyword is used followed by any type.
+THis is NOT the type of the class being instantiated; its the super class of the anonymous class or it's the interface this anonymous class will implement as I'm showing here
+
+var c4 = new Comparator<StoreEmployee>(){} 

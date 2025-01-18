@@ -1,0 +1,24 @@
+Encapsulation means hiding things by making them orivate or inaccesable (in java)
+why do you wanna hide in java
+	To make the interface simpler we may want to hide unnecessary details
+	To protect the integrity of the data on an object we may hide or restrict access to some of the data and operations
+	to decouple the published interface from the internals details of the class we may hide actuals names and types of class members
+problems of not encapsulating the data or class 
+Allowing direct access to data on an object can potentially bypass checks and additional processing your class has in place to manage the data 
+omitting a constructor that would accept initialization data may mean the calling code is respondible for stting up this data on the new object
+Beinifits of encapsulation 
+One of the huge benifits of encapsulation is that you're not actually affecting any other code 
+
+Why we wanna use encapsulation 
+We protect the members of the class and some methods from the external access
+This prevents calling code from bypassing the rules and constraints we've built into the class
+When we create a new instance it's initialized with valid data.there's no direct access to the fields in case of encapsulation 
+principles of encapsulation 
+	Create constructors for object initialization which enforces that only objects with valid data will get created 
+	use the private access modifier for your fields 
+	use setters and getter methods sparingly and only as needed 
+	use access modifiers that aren't private only for the methods that the calling code needs to use
+
+	
+
+

@@ -1,0 +1,61 @@
+Object oriented [rogramming is way to remodel real world objects as software objects which contain both data and code
+class based programming starts with classes which become the blueprint for the objects, the class decribes the data(fields) and the behavior(methods),
+that are relevant to the real world objects we want to describe. A class memeber can be a field or a method or some other type fo depende element
+when a field is not static is called instance field and any method that operates on instance field needs to be non static
+class can be organized into logical grouping which are called packages  we can declare a package name in the class using the package statement 
+Access modifiers are keywords that can be used to control the visibility of fields, methods, and constructors in a class. 
+The four access modifiers in Java are public, protected, default, and private.
+ENCAPSULATION is the bundling of behavior and attributes on a single object or it is the practice of hiding fields and some moethods from public access
+4 pillars of java are : ABSTRACTION , ENCAPSULATION,INHERITANCE,POLYMORPHISM 
+we can use a class that is developed by us by simply making a class and creating a virable using that class in the code you want to use that class 
+if we make a class named car 
+ Car(name of the class ) vname(the name of the variable) = new Car() the name of the class 
+what is null : the null is a special keyword in java meaning the varibale or attribute has a type but no reference to the object 
+A _getter_ is a method on a class that retrives the value of a private field and returns it
+A _setter_ is a moethod on a class that sets the value of a private field 
+The purpose of these methods is to contril and protect access to private fields
+THIS keyword : this is a special keyword, it referes to is the instance that was created when the object was instantiated;// this keyword is the current instance of the class
+so this is a special reference name for the object or instance whcih it can use to describe itself 
+whenever the name of the instance and the local variables both are same then our runtime environment JVM gets confused that which one is local vairbale and 
+which one is instance; to avoid this problem we should use this keyword
+with the set_variable name we can set new values to the previously defined private class 
+the new keywrd in java instances a class by allocating desired memory for an associated new object 
+isEmpty() method checks whether a string is empty or not. this method returns true if the string is emoty(length()is 0) and false if not
+
+CONSTRUCTOR
+A constructor is used in the creation of an object that's an instace of a class
+It si a special type of code block that has a specitic name and parameters much like a method
+Constructor overloading is declaring multiple constructors with different formal parameters 
+pr if the numbers of parameters is the same between two constructor their types or order of types must differ
+Every instance of the clas shares the same static variable so if changes are made to that variable all other instancees of that class will see the effect of that change
+static variables are shared between instances
+PLAIN OLD JAVA OBJECT :
+A plain old java object is a class that generally has only instance fields, it is used to house data and pass data between functional classes it usually has few if any
+methods other than getters and setters 
+A pojo also might be called a bean or a javabean, javabean is just pojo with extra rules 
+it is also sometimes called enity becuase it mirrors databases entites another acronym is DTO datatranser object 
+It's a description of an object that can be modeled as just data
+Annotation are a type of metadata; metadata is a way of formally describing additional information about our code . Annotations are more structured and have more meaning than
+comments this is becuase they can be used by the compiler or other types of pre processing functions to get information about the code 
+An overridden method is not the same thing as an overloaded method, an overridden method is a special method in hava that other classes can implement if they use a specified 
+method signature
+THE RECORD TYPE : The record is a special class that constains data that;s not meant to be altered.
+it seeks to achieve immutability for the data in its members ,contains the most fundamental methods such as constructore and accessors 
+public record LPAStudent(String id, String name, String dateOfBirth, String classList){
+	for each component in the header java generates 
+	-> A field with the same name and declared type as the record component 
+	-> the field is declared private and final
+	-> the field is sometimes refered to as the final component field 
+we can only use the record field or the instance field by passing the value through headers or constructors it doesnt accept values through getters and setters 
+Why is record built to be ummutabke?
+-> There are more use cases for immutable data transfers objects and keeping them encapsulated 
+DIFFERENCE BETWEEN PJO AND RECORD 
+If you want to modify data on your class you wont be using the record, but if you're reading a whole lot of records from a database r the file source and simply passing this 
+data around then the record is a big improvement 
+
+The toString method is used to return a string representation of an object. If any object is printed, the toString() method is internally invoked by the java compiler
+
+Substring in java is a commonly used methof of java.lang. String class that is used to create smaller strings from the bigger ones.As strings are immutable in java the origianls string remains same as it is 
+
+Mutable datatypes can be changed in the code and immutable datatypes cannot be changed in a datatype 
+Concatenation is the process of appending one string to the end of another string. You concatenate strings by using the + operator. 

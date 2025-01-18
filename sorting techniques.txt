@@ -1,0 +1,42 @@
+different types of sorting techniques:
+selection sorting :find the minimum element in unsorted array and swap it with elements in the bigining.usually sorts from the front end of the array 
+if there are n number of elements in the array there will atleast n-1 number of iteration of the loops of the sorting algorightm
+code for the algorithmn 
+for(int i=0;i<n-1;i++)//this for loop runs till the second last element of the array starting from the first element 
+	for(j=1;j<n;j++)//this loop runs till the last elemtent of the array from the second element of the array
+	{
+		if(arr[j] >arr
+		int temp = arr[j];
+		arr[j] = arr[i];
+		arr[i] = temp;}}}
+bubble sort: repeatedly swap two adjacent elements if they are in wrong order. usually sorts from the back end of the array
+
+code for the algorithmn of bubble sort
+int counter =1;
+while(counter<n){
+for(int i=0;i<n-counter;i++){
+if(arr[i]>arr[i+1]{
+int tem = arr[i];
+arr[i] = arr[i+1];
+arr[i+1] = temp;
+}
+}
+counter++;
+}
+if we have n elements in an array we need to do n-1 itereation to get a sorted array
+for a bubble sorting method for first iteration to run a loop till n-1 and for 2nd loop we run an array till n-2 and soo on so for the i th iteration
+we run the array till n-i.
+insertion sorting : insert an element from unsorted array to its correct position in sorted array
+for(i=1;i<n;i++)
+    {
+        temp=*(arr+i);
+        j=i-1;
+        while(temp<*(arr+j)&&j>=0)
+        {
+            *(arr+(j+1))=*(arr+j);
+            j--;
+        }
+        *(arr+(j+1))=temp;
+    }
+    return 0;
+}

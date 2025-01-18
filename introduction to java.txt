@@ -1,0 +1,82 @@
+ java shell or the jshell is an interacting tool and its the prototyping of the java code.
+commands of the java jshell 
+/list -all : will list all the the header files in the java library which we can include in our programs.
+we can include the header files that we create even 
+we can run a line of code directly from the jshell like if we simply write System.out.println("hello world") in the shell
+then hello world will be printed in the screen
+  
+j shell provide you with safe place to test codes 
+
+keywords : java have some specified words which have different function assigned to it 
+variable : where the data is assigned to using different keyword
+data types : variables are assigned using the data type where the data types determine the character of the variables 
+Interger.MAX_VALUE = it gives the highest value we can assign to a integer variable 
+Integer.MIN_VALUE = it gives the least value we can assign to a interger variable 
+if we surpass the the highest and the lowest number in case of assigning for a int variable then it will display the overflow and underflow 
+conditions
+wrapper class + java uses wrapper class for all its primitive data types
+wrappere class contains information about the primitive data types which the primitive doesnt store
+to find the range of the datatypes Wrapperclassname.MIN/MAX_VALUE, example Byte>MIN/MAX_VALUE 
+ternary operator is a shortcut to assigning one of two values to a variable depending on on given condition
+reserved keywords cannot be used as variable names 
+ expression - an expression computes to a single value
+statement - statements are stand alone units of works 
+code blocks- code block is a set of zero,one, more statements usually grouped together in some way to achive a single goal
+The method : a method declares executable code that can be invoked passing a fixed numbers of values as arguments 
+A method is a way of reducing code duplication, it can be reused by passing the data to the methods in the form of the arguments 
+Math.round is used to round up the value in java 
+METHOD OVERLOADING : Method overloading happens when the method are declared with the same name but has different parameters  
+yield keyword in switch case : a yield statement attempts to transfer control to the innermost enclosing switch expression
+it is used to return a vlaue from a case in switch statement only used when we need to write a code block inside a switch case statement
+LOOPING:
+while : the while liip executes until a specified condition becomes flase
+do while : the do while loop always executes atleast one and continues until a specified condition becomes false
+
+CONTINUE AND BREAK : the continue statement starts a new iteration but continues to interate through the loop
+the break statement exits the loop at the point it's executed and no longer completes any code in the loop and wont continue interating any longer
+
+local variable is called local because it is available for use by the code block in which it was declared
+scope decribes the accessibilty of a variable.
+A CLASS can be described as a custom data type and a special code block that contains methods
+the data of the static field is stored in a special memory location and only in one place where as the value of a instance field is not allocated a memory until the object is created 
+PALINDROME NUMBER : a number which  when reversed is equal oto the original number 
+PARSING is to read the value of one object to convert it to another type 
+console() method returns the unique console object associalted with the current java virtual machine if any
+EXCEPTION HANDLING 
+:an exception is an error that can happen in code and some types of the erros can be named and predicted 
+TRY STATEMENT: the try statement has two code blocks the first is declared directly after the try keyword and this code block ends and is followed by the declaration of the catch keyword
+the catch keyword includes the declaration of varivales in parenthesis and then has its own code block. Syntax:
+try{
+	//statements that might get errors
+}catch(Exception e){
+	//code to handle the exception 
+}
+The Scanner CLass
+the scanner class is decribed as a simple text scanner which can parse primitve types and strings
+The New Keyword :
+the new keyword is used in what java calls a class instance creation expression 
+ClassName variableName = new ClassName();
+and ofteh in manu cases we can pass parameters in the parentheses as we saw with methods 
+ClassName variableName = new ClassnAME(ARGUMENT1, ARGUMENT2);
+for reading inout from the terminal Scanner sc = new Scanner(System.in);
+for reading input from a file we instantiate a scanner object using new, again with the Scanner class name but pass in a file object in the parenthesis 
+Scanner sc = new Scanner(new FIle("nameOfFileOnFileSystem")) 
+The IMPORT statement let us use classes from other peoples code
+
+PARSE FUNCTION
+the parse() method if simple date format class is used to parse the text from a string to produce a date. The method parses the text strating at the index given by a start position 
+
+DIFFERENCE BETWEEN A CONSTRUCTOR AND A METHOD 
+Constructors are used to initialize a object's state like method a constructor also contains collections of statemetns that are executated at the time of
+object creation. Each time an object is created using new() keyword at least one constructor it may be default constructor is invoked to assign initial 
+values to the data memeber of the same class 
+EXAMPLE 
+Scanner sc = new scanner(System.in) //here the constructor is initialized using the new keyword; scanner is a class in java
+if we make a class called Bike and make another class and initialize a constructor Bike bk = new Bike() // a constructor is initialized using 
+the new keyword
+method is a collection fo statements that performs some specific task and return the result to the caller. A method can perform some specific task without
+returning anything.methods allow us to reuse the code without retyping the code, every method must be part of some class which.
+ A CONSTRUCTOR DOESN'T HAVE A RETURN TYPE WHEREAS THE METHOD HAS A RETURN TYPE
+A constructor initializes a object that doesnt exist and a method does opertaions on an already created objects 
+A constructor name must be same as the name of the class whereas the methods name can be anything 
+Substring in Java is a commonly used method of java. lang. String class that is used to create smaller strings from the bigger one. As strings are immutable in Java, the original string remains as it is, and the method returns a new string.

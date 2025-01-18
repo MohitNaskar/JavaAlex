@@ -1,0 +1,52 @@
+bWhat is a list ?
+List is a special type in java called interface
+
+What is a ArrayList?
+->The ArrayList is a class that really maintains an array in memeory that's actually bigger than what we need in most cases; it keeps track of the capacity which is the actual size of the array in the memory 
+  as the eleemnets are are added in an ArrayList it's capacity may need to grow. this all happends automatically behind the scenes, this is why ArrayList is resixeable.
+An ArrayList is implemented on the top of an array where as a linked list is doubly linked list
+LinkedLit also implements the Queue and Stack methods as well
+What is a iterator ?
+	->A kind of curser we're refereing to here can be described as an object that allows traversal over records in a collection 
+How does it work?
+	-> When you get an instance of an iterator you can call the next method to get the next element in the list 
+You can use the hasNext method to check if any elements remain to be processed 
+You can see a while loop which uses the iterator hasNext method to determine if it should continue loping 
+IN the loop the next method is called and its value assigned to a local variable and the local variable printedd out 
+this would jsut print each element ina alist but do it through the iterator object 
+
+An iterator is forward only and only supports the remove methods
+A listleterator can be used to go both orward and backwards and in addition to the remove moethod it also supports the add and set methods
+a linked list is a doubly linked list, the linked list implement list methods but also queue and stack method as well
+The hasPrevious( ) method returns true if there is a previous element. Otherwise, returns false. The previous( ) method Returns the previous element
+
+AUTOBOXING AND UNBOXING 
+What is boxing 
+: A primitive is boxed or wrapped in a containing class whose main data is the primitive value.  Each primitve data type has a wrapper class as shown on the list which have seen before
+each wrapper type boxes a specific primitive value
+Each wrapper has a static overloaded factory method valueOf(), which takes a primitve and returns an instance of the wrapper class 
+Integer boxedInt = Integer.valueOf(15); 
+
+The valueOf method returns the relevant Number Object holding the value of the argument passed
+
+ENUMERATION 
+The enum type is javas type to support something called an enumeration.
+A complete ordered listing of all the items in a collection 
+java defines it as a special datatype that contains predefined constants. A constant variable whole value cannot be changed once its value has been assigned 
+So an enum is little like an array except its element are known not changable and each element can be reffered to by constant name instead of an index position 
+
+public enum DayOfWeek{
+	SUNDAY, MONDAY, TUESDAY, WEDNESDAY,THURDAY , FRIDAY , SATURDAY 
+}
+ An enum is ordered by the way you declare the constants 
+
+We can pass linked list in the parameter with the conventions list<string/integer/variable>
+
+LinkedList<FlightEnabled> fliers = new LinkedList<>();
+        fliers.add(bird);
+
+private static void triggerFliers(LinkedList<FlightEnabled> fliers){
+        for(var flier : fliers){
+            flier.takeOff();
+        }
+    }

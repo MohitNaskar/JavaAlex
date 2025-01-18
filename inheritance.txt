@@ -1,0 +1,89 @@
+What is Inheritance? 
+Inheritance as form of code reuse; it is a way to organize class into a parent child hierarchu which lets the child inherit field and methods from its parent.
+extends keyword: specifies the superclass or the parent class of the class we are declaring.
+SUPER KEYWORD: super() is way to call a constructro on the super class directly from the subs class's constructor.this()  and super()
+can never be called from the same contructor.
+
+If your super class doesn't have a defualt contructor than you must explicitly call super() in all of your constructor passing the right arguments to that constructor
+
+Overriding a method is when you create a method on a subclass which has the same signature as a method on a  super class
+protected keyword in java : The protected keyword specifies access to class members in the member-list up to the next access specifier ( public or private ) or the end of the class definition.
+Polymorphism means many forms: some advantages of polymorphism are ->
+It makes the code simples and it encourages code extensibility
+
+In java every class you create intrinsically extends a special java class.this class is named object and its in the java.lang.package 
+A hashcode is what can tell us about multiple references are pointing to a single instance its a mechanism for comparison.
+
+Why inheritance is less flexible:
+	adding a class to or removing a class from a class heirarchu may impact all subclasses fromt hat point 
+	a new subclass may not need all the dunctionality or attributes of its parent class
+
+This is a special keyword in java, it refers to is the instance that was created when the object was instantiated.
+So this is a special reference name for the object or instances which it can use to describe itself.
+"Getter" is a method on a class that retrives the value of a private field and returns it;
+"Setter" is a method on a class that sets the value of a private field.
+
+A contructor is used in te creation of an object that's an instance of a class, it is a specual type of block that has a specific name and parameters much like a method
+Constructor chaining is when one constructor explicitly calls another overloaded constructor. You must use the special statement this() to execute another constructor,
+passing it arguments if required.
+this() must be the first executable statement if it's used from another constructor.
+Static variables are declared using the word static and are called static member variables.
+If changes are made to that variable all other instances of that class will see the effect of that change.
+New keyword is usedd to instanciate the instance method.
+Extends specifies the superclass or the parent class of the class we're declaring. A class can specify one and only one class in its extends clause
+
+This VS Super 
+
+The keyword super is used to access or call the parent class members(varibles and methods).
+The keyword this is used to call the current class members(varibles and methods).
+This is required when we have a parameter with the same name as an instance varible or field.
+
+The keyword this is commonly used with constructors and setters and optionally used in getter 
+In this example we are using the this keyword in the constructor and setter since there's a parameter with the same name as the instance or field.
+
+In the getter we don't have any parameters so there's no conflict so therefore the this keyword is optional there.
+The keyword super is commonly used with method overriding when we call a method with the same name from the parent class.
+
+Use this() to call a constructor from a another overloaded constructor in the same class.
+The call to this() can only be used in a constructor and it must be the first statement in a constructor.
+It's used with constructor chaining in other words when one constructor call another comstructor and it helps to reduce duplicate code.
+
+The only way to call a parent constrcutor is by calling super(), which calls the parent constructor.
+The java compliles puts a default call to super(), if we don't add it and it's always a call to the the no argument constructor which is inserted by the compiler.
+
+The call to super() must be the first statement in each constructor.
+A contructor can have a call to super() or this() but never both.
+
+Difference between Method Overloading and Method Overridding
+
+Method overloading means providing two or more separate method in a class with the same name but different parameters.
+Method return type may or may not be different and that allows us to reuse the same method name.
+Overloading is very handy it reduces duplicated code and we don't have to remember multiple method names. We can overload static or instance methods.
+
+Mthod overriding means defining a method in a child class that already exists in the parent class with the same signature( the same name, same arguments).
+By extending the parent class, the child class gets all the methods defined in the aprent lcass(those methods are also known as derived methods.
+Method overriding is also known as Runtime Polymorphisn or Dynamic Mthod Dispatch because the method that is going to be called is decided at the runtime by the java virtual machine.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

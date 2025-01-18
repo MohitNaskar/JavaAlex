@@ -1,0 +1,108 @@
+The syntax of the lambda expression is given below :
+	(o1, o2) -> o1.lastName.compareTo(o2.lastName)   -> The lambda expression parameters are determined by the associated interface methods 
+the functional methods
+(parameter1,paramter2,....) ->expression;
+
+What is a functional interface 
+A functional interface is an interface that has one and only one,abstrat method referred to as sam  which is short for 
+single abstract method, The fucntional interface is the target type for a lambda expression 
+
+Lambda expression is the framework that lets a lamba expression be used 
+
+INTERFACES
+
+The Consumer Interface
+The consumer interface is in the java.util.function package 
+it has one abstract method that takes a single argument and doesnt return anything 
+
+The two most common Consumer interfaces and the functinal method on each 
+
+Interface Name				Method Signature 
+
+Consumer 					void accept(T t)    //takes one argyment 
+
+BiConsumer					void accept(T t, U u) // takes two argument 
+
+void accept(T t) 
+
+Lambda expression variations and the lambda body : The labda body can be single expression or can contain a lambda body in opening and 
+curly brakets
+An expression canbe single statement, like a switch statemetn that does not requier yeild for a single statement result the use of returns is 
+not needed and would result in a conpiler error
+
+An expression can be a code block, Like a swicth expression that requires yeild a lmbda that returns a value would require a final return statement
+
+Functional programing : This is a programming paradigm that focuses on computiing and returning results.
+
+Lambda can excute strings also.
+Paranthesis are always required,explicit types are not
+If you use an explicit type for one parameter you must use explicit types for all the parameters.
+If you use var for one parameter you must use var for all parameters.
+
+__java.util.function__
+
+four basic categories of functional Interfaces in java.util.funtion package
+
+Interface category			Basic method signatur				purpose
+
+Consumer 					void accept(T t)					execute code without returning data
+
+Function					R apply(T t)					return a result of an operation or function 
+
+Predicate  					boolean test(T t)					test of a conidtion is true or false
+
+Supplier 					T get()						return an instance of something 
+
+
+The Predicate Interface 
+THe predicate interface takes one or two arguments and always returns a boolean value.
+They are used to test a condition and if the condition is true some operation will be performed 
+
+Interface Name				Method Signature 
+
+Predicate 					boolean test(T t)
+
+BiPredicate 				boolean test(T t,U u)
+
+
+The Function Interface
+Each has a return type shown here as either T or R which stands for result meaning a result is expected for any of these 
+
+Interface Name				Method Signature 
+
+Function<T,R>				R apply(T t)
+
+BiFunction<T,U,R>				R apply(T t,U u)
+
+UnaryOperator<T>				T apply(T t)
+
+BinaryOperator<T>				T apply(T t1,T t2)
+
+
+The Supplier Interface
+The supplier interface takes no argument but returns an instance of some types T. 	
+
+Interface Name				Method Signature 
+
+Supplier					T get()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			

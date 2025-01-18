@@ -1,0 +1,66 @@
+A abstract method has a method signature and a return type but doesnt have a method body becuase of this we say abstract method is unimplemented 
+A concrete method has a method body, This means it has operational code that gets executed under the right conditions a concrete method is said 
+to implement an abstract method if it overrides one. Abstract classes and interfaces can have a mix of abstract and concrete methods
+ 
+AN ABSTRACT CLASS DOESN'T HAVE TO IMPLEMENT ABSTRACT METHODS 
+An abstract class that extends another abstract class has some flexibilty 
+- it can implement all of the parent's abstract methods
+-it can implement some of them 
+-or it can implement none of them 
+-It can also inlcude additional abstract methods which will force subclasses to implement both animals abstract methods as well as mammals
+
+INTERFACE 
+An interface is similar to an abstract class although it isnt a class at all 
+Its a special type thats more like a contact between the class and client code that the complier enforces 
+The interface lets classes that migth have little else in common be recognized as a special refernce type\
+
+A class can only extend a single class but a class can implement many interfaces 
+We dont have to declare the iterface type abstarct because this modifier is implicitly declared for all interfaces 
+In fact any method declared without a body is really implecitly declared both public and abstract 
+
+If we omit an access modifier on class member it's implecitly package private
+If we omit an access modifier on an interface member it's implecitly public 
+Changing the access modifier of a mehtod to protected on an interface is a compiler error whetjer the method is comcrete or abstract  
+
+An interface lets us trat an instance of a single class a many different types; interface allow us to type our objects differently by behavior only
+
+FINAL MODIFIER IN JAVA
+When we use the final modifier we prevent any futher modifications to that component 
+- a final method means it can't be overridderen by a subclass
+- a finals field means an object's field can tbe reassigned or given a different value after its initialization 
+- a final static field is a class field that can't be reassigned or given a different value after the class initialization process
+- a final class can't be overridden meaning no class can use it in the extends clause 
+- a final variable in a block of code means that once its assigned a vlye any remainng code in the block cant change it 
+- a final method parameter means we cant assign a different value to that parameter in the method code block
+
+CONSTANTS IN JAVA
+A constant in java is a variable that cant be changed.
+A constant varibale is a final varibale of a primitive type, or a type String that is initialized with a constant expression 
+Constants in java are usually named with all UPPERCASE LETTERS and with underscores between words 
+A static constant means we access it via the name type name e
+
+
+EXTENDING INTERFACES
+Interfaces can be extended similar to classes using the extends keyword
+Example: interface OrbitEarth enteds FlightEnabled{}
+*An interface doesnt implement another interface;
+
+
+Both interfaces and abstract classes are abstract reference types 
+When you use an abstract reference type this is referered to as coding to an interface 
+
+
+Coding to an interface scales well to support new subtypes and it helps when refactoring code
+
+THE INTERFACE EXTEMSION METHOD - THE DEFAULT METHOD 
+An extension method is indentified byu the modifier default,so its more commonly known as default method 
+This method is a concrete method meaning it has a code and we can add statements to it
+
+Interfaces aren't classes and not a part of classes they are just a way to make your class and object behave a certain way
+Whenever you call a default method from a overridden method you need to qualify super with the interface type
+
+
+Private Methods 
+Thsi enchantment primarily addresses the problem of re use of code within concrete methods on an interface 
+A private static method cna be accessed by either a public static method a default method or a private non static method
+A private non static method us used to support default methods and other private methods 
