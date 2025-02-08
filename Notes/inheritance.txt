@@ -1,7 +1,7 @@
 What is Inheritance? 
 Inheritance as form of code reuse; it is a way to organize class into a parent child hierarchu which lets the child inherit field and methods from its parent.
 extends keyword: specifies the superclass or the parent class of the class we are declaring.
-SUPER KEYWORD: super() is way to call a constructro on the super class directly from the subs class's constructor.this()  and super()
+SUPER KEYWORD: super() is way to call a constructor on the super class directly from the subs class's constructor.this()  and super()
 can never be called from the same contructor.
 
 If your super class doesn't have a defualt contructor than you must explicitly call super() in all of your constructor passing the right arguments to that constructor
