@@ -69,7 +69,7 @@ Method overriding is also known as Runtime Polymorphisn or Dynamic Mthod Dispatc
 ((A instance of an object is a reference to an object in the memory))
 
 
-
+If one field has private access on parent class no subclass is also allowed to access that private field
 
 
 
