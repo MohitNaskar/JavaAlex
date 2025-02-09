@@ -60,7 +60,7 @@ Method overloading means providing two or more separate method in a class with t
 Method return type may or may not be different and that allows us to reuse the same method name.
 Overloading is very handy it reduces duplicated code and we don't have to remember multiple method names. We can overload static or instance methods.
 
-Mthod overriding means defining a method in a child class that already exists in the parent class with the same signature( the same name, same arguments).
+Method overriding means defining a method in a child class that already exists in the parent class with the same signature( the same name, same arguments).
 By extending the parent class, the child class gets all the methods defined in the aprent lcass(those methods are also known as derived methods.
 Method overriding is also known as Runtime Polymorphisn or Dynamic Mthod Dispatch because the method that is going to be called is decided at the runtime by the java virtual machine.
 
