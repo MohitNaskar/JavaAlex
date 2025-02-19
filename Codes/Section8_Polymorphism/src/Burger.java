@@ -4,12 +4,12 @@ public class Burger extends Item{
     private Item extra3;
 
     public Burger(String name,double price){
-        super("Burger",name,price);
+        super(name,name,price);
     }
 
     @Override
     public String getName() {
-        return super.getName() + "BURGER";
+        return super.getName() + " BURGER";
     }
 
     @Override
@@ -27,9 +27,9 @@ public class Burger extends Item{
     }
 
     public void addTopping(String extra1, String extra2, String extra3){
-        this.extra1 = new Item("TOPPING",extra1,getExtraPrice(extra1));
-        this.extra2 = new Item("TOPPING",extra2,getExtraPrice(extra2));
-        this.extra3 = new Item("TOPPING",extra3,getExtraPrice(extra3));
+        this.extra1 = new Item(extra1,extra1,getExtraPrice(extra1));
+        this.extra2 = new Item(extra2,extra2,getExtraPrice(extra2));
+        this.extra3 = new Item(extra3,extra3,getExtraPrice(extra3));
     }
     public void printItemizedList(){
          printItem("BASE BURGER",getBasePrice());
