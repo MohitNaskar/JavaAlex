@@ -3,7 +3,7 @@ The toString method on this helper class prints out all the array elements comma
 String arrayElementsInAString = Arrays.toString(newArray);
 the static method binary search tree is on the array class :
 for binary search :
-	the array has to to be sorted first 
+	The array has to to be sorted first 
 	if there is any duplicate values there is no guarantee which one it'll match on 
 	elements must be comparable trying to compare instances of different types may lead to errors and invalid results 
 This method returns :
