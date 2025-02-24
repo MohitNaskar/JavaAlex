@@ -10,4 +10,4 @@ This method returns :
 	The position of a match if found 
 	It returns a -1 when no match was found 
 	its important to remeber that a positive number may not be the position of the first match 
-	If your array has a duplicate value and you need to find the first element other methods should be used 
+	If your array has a duplicate value and you need to find the first element other methods should be used .
