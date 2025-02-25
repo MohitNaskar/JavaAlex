@@ -11,3 +11,7 @@ This method returns :
 	It returns a -1 when no match was found 
 	its important to remeber that a positive number may not be the position of the first match 
 	If your array has a duplicate value and you need to find the first element other methods should be used .
+
+Reference types vs value types
+
+Reference types store memory address of objects where value types directly hold the data itself
