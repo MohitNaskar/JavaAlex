@@ -1,10 +1,10 @@
 bWhat is a list ?
-List is a special type in java called interface
+List is a special type in java called interface.
 
 What is a ArrayList?
 ->The ArrayList is a class that really maintains an array in memeory that's actually bigger than what we need in most cases; it keeps track of the capacity which is the actual size of the array in the memory 
   as the eleemnets are are added in an ArrayList it's capacity may need to grow. this all happends automatically behind the scenes, this is why ArrayList is resixeable.
-An ArrayList is implemented on the top of an array where as a linked list is doubly linked list
+An ArrayList is implemented on the top of an array where as a linked list is doubly linked list.
 LinkedLit also implements the Queue and Stack methods as well
 What is a iterator ?
 	->A kind of curser we're refereing to here can be described as an object that allows traversal over records in a collection 
