@@ -14,14 +14,14 @@ bubble sort: repeatedly swap two adjacent elements if they are in wrong order. u
 code for the algorithmn of bubble sort
 int counter =1;
 while(counter<n){
-for(int i=0;i<n-counter;i++){
-if(arr[i]>arr[i+1]{
-int tem = arr[i];
-arr[i] = arr[i+1];
-arr[i+1] = temp;
-}
-}
-counter++;
+	for(int i=0;i<n-counter;i++){
+		if(arr[i]>arr[i+1]{
+			int tem = arr[i];
+			arr[i] = arr[i+1];
+			arr[i+1] = temp;
+		}
+	}
+	counter++;
 }
 if we have n elements in an array we need to do n-1 itereation to get a sorted array
 for a bubble sorting method for first iteration to run a loop till n-1 and for 2nd loop we run an array till n-2 and soo on so for the i th iteration
