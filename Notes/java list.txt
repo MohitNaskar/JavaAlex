@@ -22,7 +22,8 @@ The hasPrevious( ) method returns true if there is a previous element. Otherwise
 
 AUTOBOXING AND UNBOXING 
 What is boxing 
-: A primitive is boxed or wrapped in a containing class whose main data is the primitive value.  Each primitve data type has a wrapper class as shown on the list which have seen before
+
+A primitive is boxed or wrapped in a containing class whose main data is the primitive value.  Each primitve data type has a wrapper class as shown on the list which have seen before
 each wrapper type boxes a specific primitive value
 Each wrapper has a static overloaded factory method valueOf(), which takes a primitve and returns an instance of the wrapper class 
 Integer boxedInt = Integer.valueOf(15); 
