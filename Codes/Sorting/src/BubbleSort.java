@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//sorts the adjacen element
 public class BubbleSort {
     static int[] bubbleSort(int[] arr){
         boolean swapped = false;
