@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ArrayPracticeLeetCode/ArrayPracticeLeetCode.iml" filepath="$PROJECT_DIR$/ArrayPracticeLeetCode/ArrayPracticeLeetCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Essentials/Essentials.iml" filepath="$PROJECT_DIR$/Essentials/Essentials.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Practice_Problems.iml" filepath="$PROJECT_DIR$/.idea/Practice_Problems.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProgramFlow/ProgramFlow.iml" filepath="$PROJECT_DIR$/ProgramFlow/ProgramFlow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SearchingLeetCode/SearchingLeetCode.iml" filepath="$PROJECT_DIR$/SearchingLeetCode/SearchingLeetCode.iml" />
+    </modules>
+  </component>
+</project>
